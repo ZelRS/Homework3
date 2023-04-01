@@ -58,7 +58,7 @@ public class Main {
         byte bottleForOneMinute = (byte) (bottle / time);
         System.out.println(bottleForOneMinute);
         byte firstInterval = 20;
-        short secondInterval = 1440;
+        short secondInterval = 24 * 60;
         int thirdInterval = secondInterval * 3;
         int fourthInterval = secondInterval * 30;
         int firstResult = bottleForOneMinute * firstInterval;
@@ -76,10 +76,10 @@ public class Main {
         byte wightColorForOneCabinet = 2;
         byte brownColorForOneCabinet = 4;
         int bankForOneCabinet = wightColorForOneCabinet + brownColorForOneCabinet;
-        int Cabinet = allBankOfColor / bankForOneCabinet;
-        int wightColor = Cabinet * wightColorForOneCabinet;
-        int brownColor = Cabinet * brownColorForOneCabinet;
-        System.out.println("В школе, где " + Cabinet + " классов, нужно " + wightColor + " банки белой краски и " +
+        int cabinet = allBankOfColor / bankForOneCabinet;
+        int wightColor = cabinet * wightColorForOneCabinet;
+        int brownColor = cabinet * brownColorForOneCabinet;
+        System.out.println("В школе, где " + cabinet + " классов, нужно " + wightColor + " банки белой краски и " +
                 brownColor + " банки коричневой краски");
     }
     public static void task6 () {
